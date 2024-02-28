@@ -10,11 +10,12 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @Data
 @AllArgsConstructor
-public class TestModel {
+public class TestModel<T> {
     private String name;
     private String familyName;
     private int age;
     private Integer year;
+    private T t;
 //    public boolean d(){
 //        TypeReference
 //        new TypeReference<TestModel>(){}.toString()
